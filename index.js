@@ -37,4 +37,6 @@ axios.post(`${url}?key=${apiKey}`, data, {
   console.error('Error:', error.response ? error.response.data : error.message);
 });
 
-
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
