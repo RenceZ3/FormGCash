@@ -10,7 +10,7 @@ const url = 'https://www.googleapis.com/geolocation/v1/geolocate';
 // Retrieve API key from environment variables
 const apiKey = process.env.API_KEY; // This gets the API key from the .env file
 const port = process.env.PORT || 4000;
-
+const app = express();
 if (!apiKey) {
   console.error('API Key is missing. Please check your .env file.');
   process.exit(1); // Exit the program if API key is not set
